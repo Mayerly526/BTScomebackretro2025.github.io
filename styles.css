@@ -1,0 +1,190 @@
+/* Tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Bariol&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Bariol', sans-serif;
+  background-color: #000;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: 'Modern Love Grunge', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#countdown-section {
+  background: url('18.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  position: relative;
+}
+
+#wave-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#countdown {
+  font-size: 3rem;
+  font-family: 'Modern Love Grunge', cursive;
+  z-index: 2;
+}
+
+#tracklist {
+  background: url('19\ -\ copia.png') no-repeat center center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.track {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Modern Love Grunge', cursive;
+}
+
+#memory {
+  background: url('20.png') no-repeat center center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #000000;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#camera {
+  background: url('20\ -\ copia.png') no-repeat center center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #000000;
+}
+
+#camera-container {
+  margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+video, canvas {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+#puzzle {
+  background: url('18\ -\ copia.png') no-repeat center center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #000000;
+  font-family: 'Modern Love Grunge', cursive;
+}
+
+.letters {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+#language-selector {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+select {
+  background-color: #313d5d;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-family: 'Bariol', sans-serif;
+} 
+.letters .resaltada {
+  color: #e63039;               
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #5ed9ff;
+  margin: 0 0.2rem;
+}
+/* Al final o junto a tus otras reglas */
+.camera-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 4 / 3;
+  margin: auto;
+  overflow: hidden;
+}
+
+#video {
+position: absolute;  /* <- añade esto */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: block;
+  object-fit: cover;
+}
+
+.frame-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 1rem;
+}
+body {
+  cursor: url('lightstick\ BTS.png'), pointer;
+}

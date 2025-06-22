@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="Español">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTS Comeback Countdown</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bariol&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <style>
+    #download {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section id="countdown-section">
+    <div class="wave-background"></div>
+    <div id="countdown"></div>
+  </section>
+
+  <section id="tracklist">
+    <div class="track-grid"></div>
+     <div class="track" data-img="img1.jpg">Sweet Night</div>
+     <div class="track" data-img="img2.jpg">With You</div>
+     <div class="track" data-img="img3.jpg">Sweet Dreams</div>
+     <div class="track" data-img="img4.jpg">Wild Flower</div>
+     <div class="track" data-img="img5.jpg">Seven</div>
+     <div class="track" data-img="img6.jpg">People</div>
+     <div class="track" data-img="img7.jpg">Don’t Say You Love Me</div>
+  </section>
+
+  <section id="memory">
+    <h2>REMEMBER TOGETHER THE PAST</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/7UWBYJjuIL0?si=cEWXijczzHe8oDws" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+<section id="camera">
+  <h2>BTS forever</h2>
+  <p>
+    Turn on your camera, take a photo in your favorite place, discover a frame designed by BTS members<br />
+    and upload the photo to your networks and tag BTS with the #BTScomehere
+  </p>
+  <button id="start-camera">TURN ON CAMERA</button>
+
+  <div id="camera-container" class="hidden">
+    
+    <!-- CONTENEDOR DEL VIDEO + MARCO -->
+    <div class="camera-wrapper">
+      <video id="video" autoplay playsinline></video>
+    </div>
+
+    <button id="change-character">NEXT</button>
+    <canvas id="canvas"></canvas>
+    <button id="capture">TAKE PHOTO</button>
+    <a id="download" download="bts_photo.png">DOWNLOAD PHOTO</a>
+  </div>
+</section>
+
+  <section id="puzzle">
+    <div class="letters">
+  R Z B P L T O S J I
+  <span class="resaltada">B</span> 
+  <span class="resaltada">T</span> 
+  <span class="resaltada">S</span> 
+  D T E M J U L N X
+</div>
+    <h2>SOON</h2>
+  </section>
+  
+
+  <div id="language-selector">
+    <select id="language">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="ko">한국어</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+</body>
+</html>
